@@ -1,0 +1,288 @@
+*{
+	box-sizing: border-box;
+}
+html, body {
+	height: 100%;
+  	padding: 0;
+  	margin: 0;
+}
+@media (min-width: 1200px){
+	hr{
+		color: rgb(144,144,144);
+		height: 0.5px;
+	}
+	div{
+		position: absolute;
+		color: rgb(144,144,144);
+		font-weight: bold;
+		left: 30px;
+	}
+	.header{
+		position: relative;
+		background-color: rgb(33,33,33);
+		width: 100%;
+		height: 9.9%;
+	}
+	#bars{
+		position: absolute;
+		color: white;
+		top: 24px;
+		left: 2%;
+	}
+	#Youtube{
+		position: absolute;
+		color: red;
+		font-size: 30px;
+		top: 17px;
+		left: 4.8%;
+
+	}
+	#tri{
+		position: absolute;
+		color: white;
+		font-size: 23px;
+		top: 20px;
+		left: 5.6%;
+	}
+	#textyt{
+		position: absolute;
+		font-weight: bold;
+		font-family: Helvetica;
+		color: rgb(255,255,255);
+		left: 7%;
+		top: 2px;
+	}
+	sup{
+		font-weight: normal;
+		color: rgb(168,168,168);
+	}
+	#search{
+		position: absolute;
+		display: inline;
+		background-color: black;
+		padding: 7px;
+		font-size: 15px;
+		width: 40%;
+		height: 50%;
+		top: 15px;
+		left: 25%;
+		border: solid 2px rgb(49,49,49);
+	}
+	#icon{
+		position: absolute;
+		display: inline;
+		color: rgb(111,111,111);
+		top: 14px;
+		left: 65%;
+		border: solid 10px rgb(49,49,49);
+		border-width: 10px;
+	}	
+	#mic{
+		position: absolute;
+		color: white;
+		display: inline;
+		left: 70%;
+		top: 25px;
+	}
+	#grid{
+		position: absolute;
+		color: white;
+		display: inline;
+		font-size: 20px;
+		left: 84%;
+		top: 23px;
+	}
+	#option{
+		position: absolute;
+		color: white;
+		display: inline;
+		font-size: 20px;
+		left: 88%;
+		top: 23px;
+	}
+	#contains_signin{
+		display: inline;
+		position: relative;
+		color: rgb(62,166,255);
+		border: 1px solid rgb(62,166,255);
+		padding: 5px;
+		width: 55px;
+		font-family: Arial;
+		left: 90.5%;
+		height: 60px;
+		top: 20px;
+	}
+	#user{
+		position: absolute;
+		color: rgb(62,166,255);
+		padding: 2px;
+		border-radius: 75%;
+		border-color: rgb(62,166,255);
+	}
+	.left_pane{
+		position: relative;
+		padding: 0;
+		margin-top: 0;
+		width: 15%;
+		height: 100vh;
+		float: left;
+		background-color: rgb(33,33,33);
+		overflow-y: auto;
+	}
+	.art{
+		color: white;
+		font-family: Roboto;
+		text-align: center;
+	}
+	.left_pane_obj:active, .left_pane_obj:hover{
+		background-color: rgb(63,63,63);
+	}
+	#hom{
+		position: absolute;
+		width: 20%;
+		color: white;
+		padding-left: 32px;
+	}
+	#explore{
+		position: absolute;
+		width: 20%;
+		color: rgb(144,144,144);
+		padding-left: 32px;
+	}
+	#yt{
+		position: absolute;
+		width: 20%;
+		color: rgb(144,144,144);
+		padding-left: 31px;
+	}
+	#vl{
+		position: absolute;
+		color: rgb(144,144,144);
+		width: 20%;
+		padding-left: 33px;		
+	}
+	#histo{
+		position: absolute;
+		color: rgb(144,144,144);
+		width: 20%;
+		padding-left: 33px;	
+	}
+	#text{
+		position: relative;
+		color: white;
+		top: 7px;
+		padding: 5px;
+	}
+	#contains_signin1{
+		position: relative;
+		color: rgb(62,166,255);
+		border: 1px solid rgb(62,166,255);
+		left: 45px;
+		padding: 5px;
+		width: 105px;
+		font-family: Arial;
+	}
+	#text1{
+		position: absolute;
+		left: 25px;
+		font-family: Arial;
+		color: rgb(170,170,170);
+		font-size: 15px;
+	}
+	#musi{
+		position: absolute;
+		color: rgb(144,144,144);
+		width: 20%;
+		padding-left: 35px;	
+	}
+	#cup{
+		position: absolute;
+		color: rgb(144,144,144);
+		width: 20%;
+		padding-left: 35px;			
+	}
+	#gaming{
+		position: absolute;
+		color: rgb(144,144,144);
+		width: 20%;
+		padding-left: 35px;	
+	}
+	#film{
+		position: absolute;
+		color: rgb(144,144,144);
+		width: 20%;
+		font-size: 14px;
+		padding-left: 36px;	
+	}
+	#news{
+		position: absolute;
+		color: rgb(144,144,144);
+		width: 20%;
+		font-size: 14px;
+		padding-left: 36px;	
+	}
+	#live{
+		position: absolute;
+		color: rgb(144,144,144);
+		width: 20%;
+		font-size: 14px;
+		padding-left: 36px;	
+	}
+	#learning{
+		position: absolute;
+		color: rgb(144,144,144);
+		width: 20%;
+		font-size: 14px;
+		padding-left: 36px;	
+	}
+	#spotlight{
+		position: absolute;
+		color: red;
+		width: 20%;
+		font-size: 14px;
+		padding-left: 36px;	
+	}
+	#v360{
+		position: absolute;
+		color: rgb(144,144,144);
+		width: 20%;
+		padding-left: 36px;	
+	}
+	#plus{
+		position: absolute;
+		color: rgb(144,144,144);
+		width: 20%;
+		padding-left: 31px;	
+		padding-right: 4px;
+	}
+	#more{
+		position: absolute;
+		left: 23px;
+		color: rgb(144,144,144);
+	}
+	#ytpr{
+		position: absolute;
+		left: 23px;
+		color: rgb(144,144,144);
+	}
+	#setting{
+		position: absolute;
+		left: 33px;
+		color: rgb(144,144,144);
+	}
+	#report{
+		position: absolute;
+		left: 33px;
+		color: rgb(144,144,144);
+	}
+	#help{
+		position: absolute;
+		left: 33px;
+		color: rgb(144,144,144);
+	}
+	#msg{
+		position: absolute;
+		left: 33px;
+		color: rgb(144,144,144);
+	}
+}
