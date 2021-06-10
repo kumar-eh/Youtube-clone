@@ -1,5 +1,6 @@
 *{
 	box-sizing: border-box;
+	background-color: rgb(24,24,24);
 }
 html, body {
 	height: 100%;
@@ -7,15 +8,27 @@ html, body {
   	margin: 0;
 }
 @media (min-width: 1200px){
+	img{
+		position: absolute;
+		top: 35px;
+		left: 16px;
+	}
 	hr{
 		color: rgb(144,144,144);
 		height: 0.5px;
 	}
-	div{
+	.div1{
+		font-family: Arial;
 		position: absolute;
 		color: rgb(144,144,144);
 		font-weight: bold;
 		left: 30px;
+	}
+	#text{
+		font-family: Arial;
+		position: absolute;
+		color: rgb(144,144,144);
+		font-weight: bold;
 	}
 	.header{
 		position: relative;
@@ -40,8 +53,9 @@ html, body {
 	#tri{
 		position: absolute;
 		color: white;
-		font-size: 23px;
-		top: 20px;
+		background-color: red;
+		font-size: 20px;
+		top: 22.5px;
 		left: 5.6%;
 	}
 	#textyt{
@@ -284,5 +298,179 @@ html, body {
 		position: absolute;
 		left: 33px;
 		color: rgb(144,144,144);
+	}
+	.category{
+		position: relative;
+		width: 85%;
+		background-color: rgb(33,33,33);
+		height: 5%;
+		left: 0px;
+		overflow-x: auto;
+		border: 1px solid rgb(55,55,55);
+	}
+	.categories{
+		position: absolute;
+		font-family: Arial;
+		color: white;
+		background-color: rgb(63,63,63);
+		border: solid 3px rgb(87,87,87);
+		left: 20px;
+		border-radius: 44%;
+		padding-left: 9px;
+		padding-right: 9px;
+	}
+	#cat1{
+		left: 73px;
+	}
+	#cat2{
+		left: 193px;
+	}
+	#cat3{
+		left: 309px;
+	}
+	#cat4{
+		left: 424px;
+	}
+	#cat5{
+		left: 539px;
+	}
+	#cat6{
+		left: 655px;
+	}
+	#cat7{
+		left: 779px;
+	}
+	#cat8{
+		left: 893px;
+	}
+	#cat9{
+		left: 1010px;
+	}
+	#cat10{
+		left: 1126px;
+	}
+	#cat11{
+		left: 1255px;
+	}
+	.main_video{
+		position: relative;
+		background-color: rgb(24,24,24);
+		width: 85%;
+		height: 85.1%;
+		overflow-y: scroll;
+	}
+	.vids{
+		position: absolute;
+		width: 25%;
+		height: 300px;
+		overflow-y: scroll;
+	}
+	#vid1{
+		background-color: rgb(24,24,24);
+		top: 0;
+		left: 0;
+	}
+	#vid2{
+		background-color: rgb(24,24,24);
+		top: 0;
+		left: 25%;
+	}
+	#vid3{
+		background-color: rgb(24,24,24);
+		top: 0;
+		left: 50%;
+	}
+	#vid4{
+		background-color: rgb(24,24,24);
+		top: 0;
+		left: 75%;
+	}
+	#vid5{
+		background-color: rgb(24,24,24);
+		top: 300px;
+		left: 0;
+	}
+	#vid6{
+		background-color: rgb(24,24,24);
+		top: 300px;
+		left: 25%;
+	}
+	#vid7{
+		background-color: rgb(24,24,24);
+		top: 300px;
+		left: 50%;
+	}
+	#vid8{
+		background-color: rgb(24,24,24);
+		top: 300px;
+		left: 75%;
+	}
+	#vid9{
+		background-color: rgb(24,24,24);
+		top: 600px;
+		left: 0;
+	}
+	#vid10{
+		background-color: rgb(24,24,24);
+		top: 600px;
+		left: 25%;
+	}
+	#vid11{
+		background-color: rgb(24,24,24);
+		top: 600px;
+		left: 50%;
+	}
+	#vid12{
+		background-color: rgb(24,24,24);
+		top: 600px;
+		left: 75%;
+	}
+	#vid13{
+		background-color: rgb(24,24,24);
+		top: 900px;
+		left: 0;
+	}
+	#vid14{
+		background-color: rgb(24,24,24);
+		top: 900px;
+		left: 25%;
+	}
+	#vid15{
+		background-color: rgb(24,24,24);
+		top: 900px;
+		left: 50%;
+	}
+	#vid16{
+		background-color: rgb(24,24,24);
+		top: 900px;
+		left: 75%;
+	}
+	.channel{
+		position: absolute;
+		color: white;
+		top: 201px;
+		left: 23px;
+	}
+	.vid_tit{
+		position: absolute;
+		color: white;
+		font-family: Arial;
+		font-weight: bold;
+		left: 57px;
+		top: 202px;
+	}
+	.chan_name{
+		position: absolute;
+		color: rgb(170,170,170);
+		font-family: Arial;
+		top: 230px;
+		left: 57px;
+	}
+	.views{
+		position: absolute;
+		color: rgb(170,170,170);
+		font-family: Arial;
+		top: 250px;
+		left: 57px;
 	}
 }
