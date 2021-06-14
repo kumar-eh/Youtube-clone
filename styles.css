@@ -1,48 +1,56 @@
+/*First css project so there will be some mistakes Form the next project should make the parent container as relative and child elements as position 
+absolute this has been done in this project and the left top right should be in percentage to be more responsive*/
 *{
-	box-sizing: border-box;
-	background-color: rgb(24,24,24);
+	box-sizing: border-box;/*This makes the width combined with margin border and padding*/
+	background-color: rgb(24,24,24);/*Bg color for every tag be black*/
 }
-html, body {
+html, body {/*for making the content come from left and top without any border*/
 	height: 100%;
   	padding: 0;
   	margin: 0;
 }
-@media (min-width: 1200px){
+@media (min-width: 1200px){/*Media queries for large screen */
 	img{
-		position: absolute;
+		position: absolute;/*Thumbnail image being absolute as its parent vids should be absolute or relative*/
 		top: 35px;
 		left: 16px;
 	}
-	hr{
+	/*hr{
 		color: rgb(144,144,144);
 		height: 0.5px;
+	}*/
+	.small-bottom, .small-bottomdiv, .small-bottomi, .small-bottoma{
+		display: none;
 	}
-	.div1{
+	.div1{/*This contains the user icon and sign in text*/
 		font-family: Arial;
-		position: absolute;
+		position: absolute;/*Its parent header is relative*/
 		color: rgb(144,144,144);
 		font-weight: bold;
 		left: 30px;
 	}
-	#text{
+	#user_small-screen{
+		display: none;
+	}
+	#text{/*In left pane where it contains the sign in to like....text*/
 		font-family: Arial;
-		position: absolute;
+		position: absolute;/*Parent left pane relative*/
 		color: rgb(144,144,144);
 		font-weight: bold;
 	}
-	.header{
-		position: relative;
+	.header{/*Header section at the top*/
+		position: relative;/*Parent element*/
 		background-color: rgb(33,33,33);
-		width: 100%;
-		height: 9.9%;
+		width: 100%;/*Covers the entire width of the device*/
+		height: 10%;/*Covers this part of the screen as height*/
 	}
-	#bars{
+	#bars{/*Icons and its postioning*/
 		position: absolute;
 		color: white;
 		top: 24px;
 		left: 2%;
 	}
-	#Youtube{
+	#Youtube{/*Icons and its postioning*/
 		position: absolute;
 		color: red;
 		font-size: 30px;
@@ -50,7 +58,7 @@ html, body {
 		left: 4.8%;
 
 	}
-	#tri{
+	#tri{/*Icons and its postioning*/
 		position: absolute;
 		color: white;
 		background-color: red;
@@ -58,31 +66,31 @@ html, body {
 		top: 22.5px;
 		left: 5.6%;
 	}
-	#textyt{
+	#textyt{/*Icons and its postioning*/
 		position: absolute;
 		font-weight: bold;
 		font-family: Helvetica;
 		color: rgb(255,255,255);
-		left: 7%;
+		left: 7%;/*LEft from left border of the screen the text near the icon will be displayed*/
 		top: 2px;
 	}
-	sup{
+	sup{/*The in above Youtube icon and text*/
 		font-weight: normal;
 		color: rgb(168,168,168);
 	}
-	#search{
+	#search{/*Icons and its postioning*/
 		position: absolute;
 		display: inline;
 		background-color: black;
-		padding: 7px;
+		padding: 7px;/*PAdding for the text search*/
 		font-size: 15px;
 		width: 40%;
 		height: 50%;
 		top: 15px;
-		left: 25%;
+		left: 25%;/*LEft from the border of the sceen */
 		border: solid 2px rgb(49,49,49);
 	}
-	#icon{
+	#icon{/*Icons and its postioning*/
 		position: absolute;
 		display: inline;
 		color: rgb(111,111,111);
@@ -91,14 +99,14 @@ html, body {
 		border: solid 10px rgb(49,49,49);
 		border-width: 10px;
 	}	
-	#mic{
+	#mic{/*Icons and its postioning*/
 		position: absolute;
 		color: white;
 		display: inline;
 		left: 70%;
 		top: 25px;
 	}
-	#grid{
+	#grid{/*Icons and its postioning*/
 		position: absolute;
 		color: white;
 		display: inline;
@@ -106,7 +114,7 @@ html, body {
 		left: 84%;
 		top: 23px;
 	}
-	#option{
+	#option{/*Icons and its postioning*/
 		position: absolute;
 		color: white;
 		display: inline;
@@ -114,344 +122,344 @@ html, body {
 		left: 88%;
 		top: 23px;
 	}
-	#contains_signin{
+	#contains_signin{/*Icons and its postioning*/
 		display: inline;
 		position: relative;
 		color: rgb(62,166,255);
 		border: 1px solid rgb(62,166,255);
-		padding: 5px;
+		padding: 5px;/*Padding for the user icon and sign in text*/
 		width: 55px;
 		font-family: Arial;
 		left: 90.5%;
 		height: 60px;
 		top: 20px;
 	}
-	#user{
+	#user{/*Icons and its postioning*/
 		position: absolute;
 		color: rgb(62,166,255);
 		padding: 2px;
 		border-radius: 75%;
 		border-color: rgb(62,166,255);
 	}
-	.left_pane{
-		position: relative;
+	.left_pane{/*Left pane styles*//*Should have grouped the left pane elements together this wasted a lot of panes*/
+		position: relative;/*Parent element*/
 		padding: 0;
 		margin-top: 0;
 		width: 15%;
-		height: 100vh;
-		float: left;
+		height: 100%;/*TO extend to height as per the device height*/
+		float: left;/*Float at left*/
 		background-color: rgb(33,33,33);
-		overflow-y: auto;
+		overflow-y: auto;/*Scrolable when content goes past the height*/
 	}
-	.art{
+	.art{/*Article tag styles which contains text like ibrary history*/
 		color: white;
 		font-family: Roboto;
-		text-align: center;
+		text-align: center;/*ALigning at the center*/
 	}
-	.left_pane_obj:active, .left_pane_obj:hover{
+	.left_pane_obj:active, .left_pane_obj:hover{/*Pseudo class selectors when hovered over it gives the bg color change*/
 		background-color: rgb(63,63,63);
 	}
-	#hom{
-		position: absolute;
-		width: 20%;
+	#hom{/*TExt and its styles*/
+		position: absolute;/*Parent relaitve left pane*/
+		width: 20%;/*Width to occupy full left pane same 20%*/
 		color: white;
-		padding-left: 32px;
+		padding-left: 32px;/*Padding of text according to the text*/
 	}
-	#explore{
-		position: absolute;
-		width: 20%;
+	#explore{/*TExt and its styles*/
+		position: absolute;/*Parent relaitve left pane*/
+		width: 20%;/*Width to occupy full left pane same 20%*/
 		color: rgb(144,144,144);
-		padding-left: 32px;
+		padding-left: 32px;/*Padding of text according to the text*/
 	}
-	#yt{
-		position: absolute;
-		width: 20%;
+	#yt{/*TExt and its styles*/
+		position: absolute;/*Parent relaitve left pane*/
+		width: 20%;/*Width to occupy full left pane same 20%*/
 		color: rgb(144,144,144);
-		padding-left: 31px;
+		padding-left: 31px;/*Padding of text according to the text*/
 	}
-	#vl{
-		position: absolute;
+	#vl{/*TExt and its styles*/
+		position: absolute;/*Parent relaitve left pane*/
 		color: rgb(144,144,144);
-		width: 20%;
-		padding-left: 33px;		
+		width: 20%;/*Width to occupy full left pane same 20%*/
+		padding-left: 33px;		/*Padding of text according to the text*/
 	}
-	#histo{
-		position: absolute;
+	#histo{/*TExt and its styles*/
+		position: absolute;/*Parent relaitve left pane*/
 		color: rgb(144,144,144);
-		width: 20%;
-		padding-left: 33px;	
+		width: 20%;/*Width to occupy full left pane same 20%*/
+		padding-left: 33px;	/*Padding of text according to the text*/
 	}
-	#text{
-		position: relative;
+	#text{/*TExt and its styles*/
+		position: relative;/*Parent relaitve left pane*/
 		color: white;
-		top: 7px;
-		padding: 5px;
-	}
+		top: 7px;/*Some mistake this id is already used in header tag but dont know how it works dont wanna change now*/
+		padding: 5px;/*Padding of text according to the text*/
+	}/*TExt and its styles*/
 	#contains_signin1{
-		position: relative;
+		position: relative;/*Parent relaitve left pane*/
 		color: rgb(62,166,255);
 		border: 1px solid rgb(62,166,255);
 		left: 45px;
-		padding: 5px;
+		padding: 5px;/*Padding of text according to the text*/
 		width: 105px;
 		font-family: Arial;
 	}
-	#text1{
-		position: absolute;
+	#text1{/*TExt and its styles best of youtube*/
+		position: absolute;/*Parent relaitve left pane*/
 		left: 25px;
 		font-family: Arial;
 		color: rgb(170,170,170);
 		font-size: 15px;
 	}
-	#musi{
-		position: absolute;
+	#musi{/*TExt and its styles*/
+		position: absolute;/*Parent relaitve left pane*/
 		color: rgb(144,144,144);
-		width: 20%;
-		padding-left: 35px;	
+		width: 20%;/*Width to occupy full left pane same 20%*/
+		padding-left: 35px;	/*Padding of text according to the text*/
 	}
-	#cup{
-		position: absolute;
+	#cup{/*TExt and its styles*/
+		position: absolute;/*Parent relaitve left pane*/
 		color: rgb(144,144,144);
-		width: 20%;
-		padding-left: 35px;			
+		width: 20%;/*Width to occupy full left pane same 20%*/
+		padding-left: 35px;			/*Padding of text according to the text*/
 	}
-	#gaming{
-		position: absolute;
+	#gaming{/*TExt and its styles*/
+		position: absolute;/*Parent relaitve left pane*/
 		color: rgb(144,144,144);
-		width: 20%;
-		padding-left: 35px;	
+		width: 20%;/*Width to occupy full left pane same 20%*/
+		padding-left: 35px;	/*Padding of text according to the text*/
 	}
-	#film{
-		position: absolute;
+	#film{/*TExt and its styles*/
+		position: absolute;/*Parent relaitve left pane*/
 		color: rgb(144,144,144);
-		width: 20%;
+		width: 20%;/*Width to occupy full left pane same 20%*/
 		font-size: 14px;
-		padding-left: 36px;	
+		padding-left: 36px;	/*Padding of text according to the text*/
 	}
-	#news{
-		position: absolute;
+	#news{/*TExt and its styles*/
+		position: absolute;/*Parent relaitve left pane*/
 		color: rgb(144,144,144);
-		width: 20%;
+		width: 20%;/*Width to occupy full left pane same 20%*/
 		font-size: 14px;
-		padding-left: 36px;	
+		padding-left: 36px;	/*Padding of text according to the text*/
 	}
-	#live{
-		position: absolute;
+	#live{/*TExt and its styles*/
+		position: absolute;/*Parent relaitve left pane*/
 		color: rgb(144,144,144);
-		width: 20%;
+		width: 20%;/*Width to occupy full left pane same 20%*/
 		font-size: 14px;
-		padding-left: 36px;	
+		padding-left: 36px;	/*Padding of text according to the text*/
 	}
-	#learning{
-		position: absolute;
+	#learning{/*TExt and its styles*/
+		position: absolute;/*Parent relaitve left pane*/
 		color: rgb(144,144,144);
-		width: 20%;
+		width: 20%;/*Width to occupy full left pane same 20%*/
 		font-size: 14px;
-		padding-left: 36px;	
+		padding-left: 36px;	/*Padding of text according to the text*/
 	}
-	#spotlight{
-		position: absolute;
+	#spotlight{/*TExt and its styles*/
+		position: absolute;/*Parent relaitve left pane*/
 		color: red;
-		width: 20%;
+		width: 20%;/*Width to occupy full left pane same 20%*/
 		font-size: 14px;
-		padding-left: 36px;	
+		padding-left: 36px;	/*Padding of text according to the text*/
 	}
-	#v360{
-		position: absolute;
+	#v360{/*TExt and its styles*/
+		position: absolute;/*Parent relaitve left pane*/
 		color: rgb(144,144,144);
-		width: 20%;
-		padding-left: 36px;	
+		width: 20%;/*Width to occupy full left pane same 20%*/
+		padding-left: 36px;	/*Padding of text according to the text*/
 	}
-	#plus{
-		position: absolute;
+	#plus{/*TExt and its styles*/
+		position: absolute;/*Parent relaitve left pane*/
 		color: rgb(144,144,144);
-		width: 20%;
-		padding-left: 31px;	
-		padding-right: 4px;
+		width: 20%;/*Width to occupy full left pane same 20%*/
+		padding-left: 31px;	/*Padding of text according to the text*/
+		padding-right: 4px;/*Padding of text according to the text*/
 	}
-	#more{
-		position: absolute;
+	#more{/*TExt and its styles*/
+		position: absolute;/*Parent relaitve left pane*/
 		left: 23px;
 		color: rgb(144,144,144);
 	}
-	#ytpr{
-		position: absolute;
+	#ytpr{/*TExt and its styles*/
+		position: absolute;/*Parent relaitve left pane*/
 		left: 23px;
 		color: rgb(144,144,144);
 	}
-	#setting{
-		position: absolute;
+	#setting{/*TExt and its styles*/
+		position: absolute;/*Parent relaitve left pane*/
 		left: 33px;
 		color: rgb(144,144,144);
 	}
-	#report{
-		position: absolute;
+	#report{/*TExt and its styles*/
+		position: absolute;/*Parent relaitve left pane*/
 		left: 33px;
 		color: rgb(144,144,144);
 	}
-	#help{
-		position: absolute;
+	#help{/*TExt and its styles*/
+		position: absolute;/*Parent relaitve left pane*/
 		left: 33px;
 		color: rgb(144,144,144);
 	}
-	#msg{
-		position: absolute;
+	#msg{/*TExt and its styles*/
+		position: absolute;/*Parent relaitve left pane*/
 		left: 33px;
 		color: rgb(144,144,144);
 	}
-	.category{
-		position: relative;
-		width: 85%;
+	.category{/*Grouped many styles together for this category scetion yet the position is given separately should learn how to stack elements */
+		position: relative;/*PArent element*/
+		width: 85%;/*Width of 85% othe rthan the left pane 25%*/
 		background-color: rgb(33,33,33);
 		height: 5%;
 		left: 0px;
-		overflow-x: auto;
+		overflow-x: auto;/*scrollable horizontally*/
 		border: 1px solid rgb(55,55,55);
 	}
-	.categories{
-		position: absolute;
+	.categories{/*Categories span tag which has category elements*/
+		position: absolute;/*child element*/
 		font-family: Arial;
 		color: white;
 		background-color: rgb(63,63,63);
 		border: solid 3px rgb(87,87,87);
 		left: 20px;
-		border-radius: 44%;
-		padding-left: 9px;
-		padding-right: 9px;
+		border-radius: 44%;/*Rounded border*/
+		padding-left: 9px;/*padding for text*/
+		padding-right: 9px;/*padding for text*/
 	}
-	#cat1{
+	#cat1{/*Position of category*/
 		left: 73px;
 	}
-	#cat2{
+	#cat2{/*Position of category*/
 		left: 193px;
 	}
-	#cat3{
+	#cat3{/*Position of category*/
 		left: 309px;
 	}
-	#cat4{
+	#cat4{/*Position of category*/
 		left: 424px;
 	}
-	#cat5{
+	#cat5{/*Position of category*/
 		left: 539px;
 	}
-	#cat6{
+	#cat6{/*Position of category*/
 		left: 655px;
 	}
-	#cat7{
+	#cat7{/*Position of category*/
 		left: 779px;
 	}
-	#cat8{
+	#cat8{/*Position of category*/
 		left: 893px;
 	}
-	#cat9{
+	#cat9{/*Position of category*/
 		left: 1010px;
 	}
-	#cat10{
+	#cat10{/*Position of category*/
 		left: 1126px;
 	}
-	#cat11{
+	#cat11{/*Position of category*/
 		left: 1255px;
 	}
-	.main_video{
-		position: relative;
+	.main_video{/*main videos section container of all video containers which contains thumbnail channel name etc..*/
+		position: relative;/*Parent element*/
 		background-color: rgb(24,24,24);
-		width: 85%;
+		width: 85%;/*Width other than left pane*/
 		height: 85.1%;
+		overflow-y: scroll;/*scrollable when overflows*/
+	}
+	.vids{/*video contianer which contains thumbnail, vhannel name etc..*/
+		position: absolute;/*child element*/
+		width: 25%;/*25% of the total videos container*/
+		height: 300px;/*height fixed*/
 		overflow-y: scroll;
 	}
-	.vids{
-		position: absolute;
-		width: 25%;
-		height: 300px;
-		overflow-y: scroll;
-	}
-	#vid1{
+	#vid1{/*Specific video position*/
 		background-color: rgb(24,24,24);
 		top: 0;
 		left: 0;
 	}
-	#vid2{
+	#vid2{/*Specific video position*/
 		background-color: rgb(24,24,24);
 		top: 0;
 		left: 25%;
 	}
-	#vid3{
+	#vid3{/*Specific video position*/
 		background-color: rgb(24,24,24);
 		top: 0;
 		left: 50%;
 	}
-	#vid4{
+	#vid4{/*Specific video position*/
 		background-color: rgb(24,24,24);
 		top: 0;
 		left: 75%;
 	}
-	#vid5{
+	#vid5{/*Specific video position*/
 		background-color: rgb(24,24,24);
 		top: 300px;
 		left: 0;
 	}
-	#vid6{
+	#vid6{/*Specific video position*/
 		background-color: rgb(24,24,24);
 		top: 300px;
 		left: 25%;
 	}
-	#vid7{
+	#vid7{/*Specific video position*/
 		background-color: rgb(24,24,24);
 		top: 300px;
 		left: 50%;
 	}
-	#vid8{
+	#vid8{/*Specific video position*/
 		background-color: rgb(24,24,24);
 		top: 300px;
 		left: 75%;
 	}
-	#vid9{
+	#vid9{/*Specific video position*/
 		background-color: rgb(24,24,24);
 		top: 600px;
 		left: 0;
 	}
-	#vid10{
+	#vid10{/*Specific video position*/
 		background-color: rgb(24,24,24);
 		top: 600px;
 		left: 25%;
 	}
-	#vid11{
+	#vid11{/*Specific video position*/
 		background-color: rgb(24,24,24);
 		top: 600px;
 		left: 50%;
 	}
-	#vid12{
+	#vid12{/*Specific video position*/
 		background-color: rgb(24,24,24);
 		top: 600px;
 		left: 75%;
 	}
-	#vid13{
+	#vid13{/*Specific video position*/
 		background-color: rgb(24,24,24);
 		top: 900px;
 		left: 0;
 	}
-	#vid14{
+	#vid14{/*Specific video position*/
 		background-color: rgb(24,24,24);
 		top: 900px;
 		left: 25%;
 	}
-	#vid15{
+	#vid15{/*Specific video position*/
 		background-color: rgb(24,24,24);
 		top: 900px;
 		left: 50%;
 	}
-	#vid16{
+	#vid16{/*Specific video position*/
 		background-color: rgb(24,24,24);
 		top: 900px;
 		left: 75%;
 	}
-	.channel{
+	.channel{/*All icons of channel styles grouped together*/
 		position: absolute;
 		color: white;
 		top: 201px;
 		left: 23px;
 	}
-	.vid_tit{
+	.vid_tit{/*All video title name styles grouped together*/
 		position: absolute;
 		color: white;
 		font-family: Arial;
@@ -459,14 +467,14 @@ html, body {
 		left: 57px;
 		top: 202px;
 	}
-	.chan_name{
+	.chan_name{/*All channel name styles grouped together*/
 		position: absolute;
 		color: rgb(170,170,170);
 		font-family: Arial;
 		top: 230px;
 		left: 57px;
 	}
-	.views{
+	.views{/*All views styles grouped together*/
 		position: absolute;
 		color: rgb(170,170,170);
 		font-family: Arial;
@@ -474,3 +482,129 @@ html, body {
 		left: 57px;
 	}
 }
+@media(max-width: 767px){
+	*{
+		background-color: white;
+	}
+	.header{
+		position: fixed;
+		width: 100%;
+		height: 10%;
+		background-color: white;
+		top: 0;
+		left: 0;
+		margin-bottom: 0;
+	}
+	#Youtube{
+		position: absolute;
+		top: 50%;
+  		margin-top: -25px;
+		left: 2%;
+		width: 0;
+		background-color: black;
+		color: red;
+		font-size: 22px;
+	}
+	#textyt{
+		position: absolute;
+		font-weight: bold;
+		font-family: Helvetica;
+		left: 10%;
+		top: 50%;
+  		margin-top: -25px;
+	}
+	#icon{
+		position: absolute;
+		top: 50%;
+  		margin-top: -25px;
+		right: 20%;
+		width: 0;
+		background-color: white;
+	}
+	#user_small-screen{
+		position: absolute;
+		top: 50%;
+  		margin-top: -25px;
+		right: 5%;
+	}
+	.category{/*Grouped many styles together for this category scetion yet the position is given separately should learn how to stack elements */
+		position: relative;/*PArent element*/
+		top: 10%;
+		height: 7%;
+		background-color: white;
+		overflow-x: auto;/*scrollable horizontally*/
+	}
+	.categories{/*Categories span tag which has category elements*/
+		position: absolute;/*child element*/
+		font-family: Arial;
+		color: black;
+		background-color: #b7bec9;
+		top: 2px;
+		border-radius: 44%;/*Rounded border*/
+		padding-left: 12px;/*padding for text*/
+		padding-right: 12px;/*padding for text*/
+	}
+	#cat1{/*Position of category*/
+		left: 73px;
+	}
+	#cat2{/*Position of category*/
+		left: 193px;
+	}
+	#cat3{/*Position of category*/
+		left: 309px;
+	}
+	#cat4{/*Position of category*/
+		left: 424px;
+	}
+	#cat5{/*Position of category*/
+		left: 539px;
+	}
+	#cat6{/*Position of category*/
+		left: 655px;
+	}
+	#cat7{/*Position of category*/
+		left: 779px;
+	}
+	#cat8{/*Position of category*/
+		left: 893px;
+	}
+	#cat9{/*Position of category*/
+		left: 1010px;
+	}
+	#cat10{/*Position of category*/
+		left: 1126px;
+	}
+	#cat11{/*Position of category*/
+		left: 1255px;
+	}
+	.main_video{
+		position: relative;/*Parent element*/
+		background-color: white;
+		width: 100%;/*Width other than left pane*/
+		top: 10%;
+		height: 83%;
+		overflow-y: scroll;/*scrollable when overflows*/
+	}
+	.vids{/*video contianer which contains thumbnail, vhannel name etc..*/
+		border: 1px solid black;
+		text-align: center;
+		margin: 0 auto;
+	}
+	#bars, #search, #mic, #grid, #option, #contains_signin, #tri, .left_pane{
+		display: none;
+	}
+/*	.small-bottom{
+		background-color: red;
+		position: relative;
+		display: inline;
+		top: 100%;
+		width: 100%;
+		height: 10%;
+	}
+	.small-bottomdiv{
+		display: inline;
+	}*/
+}
+
+
+

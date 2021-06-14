@@ -2,84 +2,99 @@
 <html lang = "en">
 <head>
 	<meta charset = "utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--For not zooming out when viewed on mobile-->
 	<title>Youtube</title>
-	<link rel = "stylesheet" href = "css/styles.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel = "stylesheet" href = "css/styles.css"><!--For connecting to css-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--For usinf the icons from font awesome -->
 </head>
 <body>
 	<!---Header tag which contains the icons and search button at the top-->
 	<header class = "header">
-		<i class="fa fa-bars" id = "bars"></i>
-		<i class="fa fa-youtube-play" id = "Youtube"></i>
-		<i class="fa fa-caret-right" id = "tri"></i>
-		<p id = "textyt">YOUTUBE<sup id = "sp">IN</sup></p>
-		<input id = "search" placeholder = "Search"></input>
-		<i class="fa fa-search" id = "icon" ></i>		
-		<i class="fa fa-microphone" id = "mic"></i>
-		<i class="fa fa-th" id = "grid"></i>
-		<i class="fa fa-ellipsis-v" id = "option"></i>
-		<div class="div1" id = "contains_signin">
-			<i class="fa fa-user-plus" id = "user"></i>
+		<i class="fa fa-bars" id = "bars"></i><!--The options button on top left-->
+		<i class="fa fa-youtube-play" id = "Youtube"></i><!---The youtube icon-->
+		<i class="fa fa-caret-right " id = "tri"></i><!---The white triangle in the middle-->
+		<p id = "textyt">YOUTUBE<sup id = "sp">IN</sup></p><!---Name of the app-->
+		<input id = "search" placeholder = "Search"></input><!---Search text box which gets input-->
+		<i class="fa fa-search" id = "icon" ></i><!--- Search icon at the right-->
+		<i class="fa fa-microphone " id = "mic"></i><!---microphone id at the right -->
+		<i class="fa fa-th" id = "grid"></i><!--Grid icon at the top right--->
+		<i class="fa fa-ellipsis-v" id = "option"></i><!-- The three dots at the top right--->
+		<div class="div1" id = "contains_signin"><!---Container which contains the user icon and text "Sign in"-->
+			<i class="fa fa-user-plus" id = "user"></i><!---user icon-->
 			   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIGN IN&nbsp;&nbsp;&nbsp;&nbsp;
 		</div>
-	</header>
-	<section class= "left_pane">
-		<i class="fa fa-home left_pane_obj"  id= "hom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>
+		<i class="fa fa-user-plus" id = "user_small-screen"></i><!---user icon-->
+	</header><!--End of the top section/header , This can be shifted and the entire contents will come with it--->
+	<section class= "left_pane"><!---Start of left pane -->
+		<i class="fa fa-home left_pane_obj"  id= "hom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i><!---Home icon and text-->
 		<article class="art left_pane_obj">Home</article><br>
-		<i class="fa fa-compass left_pane_obj" id = "explore">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>
+		<i class="fa fa-compass left_pane_obj" id = "explore">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i><!---Explore icon and text-->
 		<article class="art left_pane_obj">Explore</article><br>
-		<i class="fa fa-youtube-play left_pane_obj" id = "yt" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>
+		<i class="fa fa-youtube-play left_pane_obj" id = "yt" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i><!---Subscriptions icon and text-->
 		<article class="art left_pane_obj">Subscriptions</article><br><hr>
 		<i class="fa fa-play left_pane_obj" id = "vl"></i>
-		<article class="art left_pane_obj">Library</article><br>
+		<article class="art left_pane_obj">Library</article><br><!---Library icon and etxt-->
 		<i class="fa fa-history left_pane_obj" id = "histo"></i>
-		<article class="art left_pane_obj">History</article><hr>
+		<article class="art left_pane_obj">History</article><hr><!--History icon and text--->
 		<div id = "text">Sign in to like videos, comment and subscribe.</div><br>
-		<div id = "contains_signin1">
+		<div id = "contains_signin1"><!---Container which contains the user icon and text "Sign in"-->
 			<i class="fa fa-user-plus"></i>
 			   SIGN IN
 		</div><br>
 		<hr>
-		<div id = "text1">BEST OF YOUTUBE</div><br><br>
+		<div id = "text1">BEST OF YOUTUBE</div><br><br><!---Text-->
 		<i class="fa fa-music left_pane_obj" id = "musi" ></i>
-		<article class="art left_pane_obj">Music</article><br>
+		<article class="art left_pane_obj">Music</article><br><!--Music icon and text--->
 		<i class="fa fa-trophy left_pane_obj" id = "cup"></i>
-		<article class="art left_pane_obj">Sport</article><br>
+		<article class="art left_pane_obj">Sport</article><br><!--SPort icon and text--->
 		<i class="fa fa-gamepad left_pane_obj" id ="gaming"></i>
-		<article class="art left_pane_obj">Gaming</article><br>
+		<article class="art left_pane_obj">Gaming</article><br><!--Gaming icon and text--->
 		<i class="fa fa-film left_pane_obj" id = "film"></i>
-		<article class="art left_pane_obj">Films</article><br>
+		<article class="art left_pane_obj">Films</article><br><!--Films icon and text--->
 		<i class="fa fa-newspaper-o left_pane_obj" id = "news"></i>
-		<article class="art left_pane_obj">News</article><br>
+		<article class="art left_pane_obj">News</article><br><!--NEws icon and text--->
 		<i class="fa fa-rss left_pane_obj" id = "live" ></i>
-		<article class="art left_pane_obj">Live</article><br>
+		<article class="art left_pane_obj">Live</article><br><!--Live icon and text--->
 		<i class="fa fa-graduation-cap left_pane_obj" id = "learning"></i>
-		<article class="art left_pane_obj">Learning</article><br>
+		<article class="art left_pane_obj">Learning</article><br><!--LEarning icon and text--->
 		<i class="fa fa-youtube-play left_pane_obj" id = "spotlight"></i>
-		<article class="art left_pane_obj">Spotlight</article><br>
+		<article class="art left_pane_obj">Spotlight</article><br><!--Spotlight icon and text--->
 		<i class="fa fa-magnet left_pane_obj" id = "v360"></i>
-		<article class="art left_pane_obj">360 Video</article><br><hr><br>
+		<article class="art left_pane_obj">360 Video</article><br><hr><br><!--360 video icon and text--->
 		<i class="fa fa-plus left_pane_obj" id = "plus"></i>
-		<article class="art left_pane_obj">Browse channels</article><br><hr><br>
+		<article class="art left_pane_obj">Browse channels</article><br><hr><br><!--BRowse icon and text--->
 		<div id = "more">MORE FROM YOUTUBE</div><br><br>
 		<i class="fa fa-youtube-play left_pane_obj" id = "ytpr"></i>
-		<article class="art left_pane_obj">YouTube Premium</article><br>
+		<article class="art left_pane_obj">YouTube Premium</article><br><!--YT premium icon and text--->
 		<i class="fa fa-rss left_pane_obj" id = "live" ></i>
-		<article class="art left_pane_obj">Live</article><br><hr><br>
+		<article class="art left_pane_obj">Live</article><br><hr><br><!--Live icon and text--->
 		<i class="fa fa-cog left_pane_obj" id = "setting"></i>
-		<article class="art left_pane_obj">Settings</article><br>
+		<article class="art left_pane_obj">Settings</article><br><!--settings icon and text--->
 		<i class="fa fa-flag left_pane_obj" id = "report"></i>
-		<article class="art left_pane_obj">Report History</article><br>
+		<article class="art left_pane_obj">Report History</article><br><!--report History icon and text--->
 		<i class="fa fa-question-circle left_pane_obj" id= "help"></i>
-		<article class="art left_pane_obj">Help</article><br>
+		<article class="art left_pane_obj">Help</article><br><!--Hepl icon and text--->
 		<i class="fa fa-commenting-o left_pane_obj" id = "msg"></i>
-		<article class="art left_pane_obj">Send feedback</article><br><hr><br>
+		<article class="art left_pane_obj">Send feedback</article><br><hr><br><!--text--->
 		<div class="div1">About Press Copyright</div><br><br>
 		<div class="div1">Contact us Creator Advertise</div><br><br><br>
 		<div class="div1">Terms Privacy Policy & SafetyHow YouTube worksTest new features</div><br><br>
-	</section>
-	<div class="category">
+	</section><!--Left pane ends here and this shifts with its entire contents when moved--->
+<!-- 	<section class="small-bottom">
+		<div class="small-bottomdiv">
+			<i class="fa fa-home small-bottomi"  id= "home"></i>
+			<article class="small-bottoma">Home</article><br class="small-bottom">
+		</div>
+		<div class="small-bottomdiv">
+			<i class="fa fa-fire small-bottomi" id = "trending"></i>
+			<article class="small-bottoma">Trending</article><br class="small-bottom">
+		</div>
+		<div class="small-bottomdiv">
+			<i class="fa fa-play small-bottomi" id = "library"></i>
+			<article class="small-bottoma">Library</article><br class="small-bottom">js
+		</div>
+	</section> -->
+	<div class="category"><!---This contains the section where it contains all the categories-->
 		<span class="categories">All</span>
 		<span class="categories" id = "cat1">Category 1</span>
 		<span class="categories" id = "cat2">Category 2</span>
@@ -92,120 +107,120 @@
 		<span class="categories" id = "cat9">Category 9</span>
 		<span class="categories" id = "cat10">Category 10</span>
 		<span class="categories" id = "cat11">Category 11</span>
-	</div>
-	<div class="main_video">
-		<div class="vids" id = "vid1">
-			<img src = "thumbnail.jpg" width = "275" height="150" alt = "Thumbnail"></img>
+	</div><!--ENd of section tag--->
+	<div class="main_video"><!--This part contains the videos section--->
+		<div class="vids" id = "vid1"><!---Video with thumbnail channel name date and number of views Same for every 16 videos-->
+			<img src = "thumbnail.jpg" width = "275" height="150" alt = "Thumbnail"></img><br>
 			<i class="fa fa-user-circle-o channel"></i>
 			<span class = "vid_tit">Video Title</span>
 			<div class="chan_name">Channel Name</div>
 			<div class="views">10M views ⚪ 1 month ago</div> 
 		</div> 
-		<div class="vids" id = "vid2">
-			<img src = "thumbnail.jpg" width = "275" height="150" alt = "Thumbnail"></img>
+		<div class="vids" id = "vid2"><!---Video with thumbnail channel name date and number of views Same for every 16 videos-->
+			<img src = "thumbnail.jpg" width = "275" height="150" alt = "Thumbnail"></img><br>
 			<i class="fa fa-user-circle-o channel"></i>
 			<span class = "vid_tit">Video Title</span>
 			<div class="chan_name">Channel Name</div>
 			<div class="views">10M views ⚪ 1 month ago</div> 
 		</div> 
-		<div class="vids" id = "vid3">
-			<img src = "thumbnail.jpg" width = "275" height="150" alt = "Thumbnail"></img>
+		<div class="vids" id = "vid3"><!---Video with thumbnail channel name date and number of views Same for every 16 videos-->
+			<img src = "thumbnail.jpg" width = "275" height="150" alt = "Thumbnail"></img><br>
 			<i class="fa fa-user-circle-o channel"></i>
 			<span class = "vid_tit">Video Title</span>
 			<div class="chan_name">Channel Name</div>
 			<div class="views">10M views ⚪ 1 month ago</div> 
 		</div> 
-		<div class="vids" id = "vid4">  
-			<img src = "thumbnail.jpg" width = "275" height="150" alt = "Thumbnail"></img>
+		<div class="vids" id = "vid4">  <!---Video with thumbnail channel name date and number of views Same for every 16 videos-->
+			<img src = "thumbnail.jpg" width = "275" height="150" alt = "Thumbnail"></img><br>
 			<i class="fa fa-user-circle-o channel"></i>
 			<span class = "vid_tit">Video Title</span>
 			<div class="chan_name">Channel Name</div>
 			<div class="views">10M views ⚪ 1 month ago</div> 
 		</div> 
-		<div class="vids" id = "vid5">
-			<img src = "thumbnail.jpg" width = "275" height="150" alt = "Thumbnail"></img>
+		<div class="vids" id = "vid5"><!---Video with thumbnail channel name date and number of views Same for every 16 videos-->
+			<img src = "thumbnail.jpg" width = "275" height="150" alt = "Thumbnail"></img><br>
 			<i class="fa fa-user-circle-o channel"></i>
 			<span class = "vid_tit">Video Title</span>
 			<div class="chan_name">Channel Name</div>
 			<div class="views">10M views ⚪ 1 month ago</div> 
 		</div> 
-		<div class="vids" id = "vid6">
-			<img src = "thumbnail.jpg" width = "275" height="150" alt = "Thumbnail"></img>
+		<div class="vids" id = "vid6"><!---Video with thumbnail channel name date and number of views Same for every 16 videos-->
+			<img src = "thumbnail.jpg" width = "275" height="150" alt = "Thumbnail"></img><br>
 			<i class="fa fa-user-circle-o channel"></i>
 			<span class = "vid_tit">Video Title</span>
 			<div class="chan_name">Channel Name</div>
 			<div class="views">10M views ⚪ 1 month ago</div> 
 		</div> 
-		<div class="vids" id = "vid7">
-			<img src = "thumbnail.jpg" width = "275" height="150" alt = "Thumbnail"></img>
+		<div class="vids" id = "vid7"><!---Video with thumbnail channel name date and number of views Same for every 16 videos-->
+			<img src = "thumbnail.jpg" width = "275" height="150" alt = "Thumbnail"></img><br>
 			<i class="fa fa-user-circle-o channel"></i>
 			<span class = "vid_tit">Video Title</span>
 			<div class="chan_name">Channel Name</div>
 			<div class="views">10M views ⚪ 1 month ago</div> 
 		</div> 
-		<div class="vids" id = "vid8">
-			<img src = "thumbnail.jpg" width = "275" height="150" alt = "Thumbnail"></img>
+		<div class="vids" id = "vid8"><!---Video with thumbnail channel name date and number of views Same for every 16 videos-->
+			<img src = "thumbnail.jpg" width = "275" height="150" alt = "Thumbnail"></img><br>
 			<i class="fa fa-user-circle-o channel"></i>
 			<span class = "vid_tit">Video Title</span>
 			<div class="chan_name">Channel Name</div>
 			<div class="views">10M views ⚪ 1 month ago</div> 
 		</div> 
-		<div class="vids" id = "vid9">
-			<img src = "thumbnail.jpg" width = "275" height="150" alt = "Thumbnail"></img>
+		<div class="vids" id = "vid9"><!---Video with thumbnail channel name date and number of views Same for every 16 videos-->
+			<img src = "thumbnail.jpg" width = "275" height="150" alt = "Thumbnail"></img><br>
 			<i class="fa fa-user-circle-o channel"></i>
 			<span class = "vid_tit">Video Title</span>
 			<div class="chan_name">Channel Name</div>
 			<div class="views">10M views ⚪ 1 month ago</div> 
 		</div> 
-		<div class="vids" id = "vid10">
-			<img src = "thumbnail.jpg" width = "275" height="150" alt = "Thumbnail"></img>
+		<div class="vids" id = "vid10"><!---Video with thumbnail channel name date and number of views Same for every 16 videos-->
+			<img src = "thumbnail.jpg" width = "275" height="150" alt = "Thumbnail"></img><br>
 			<i class="fa fa-user-circle-o channel"></i>
 			<span class = "vid_tit">Video Title</span>
 			<div class="chan_name">Channel Name</div>
 			<div class="views">10M views ⚪ 1 month ago</div> 
 		</div> 
-		<div class="vids" id = "vid11">
-			<img src = "thumbnail.jpg" width = "275" height="150" alt = "Thumbnail"></img>
+		<div class="vids" id = "vid11"><!---Video with thumbnail channel name date and number of views Same for every 16 videos-->
+			<img src = "thumbnail.jpg" width = "275" height="150" alt = "Thumbnail"></img><br>
 			<i class="fa fa-user-circle-o channel"></i>
 			<span class = "vid_tit">Video Title</span>
 			<div class="chan_name">Channel Name</div>
 			<div class="views">10M views ⚪ 1 month ago</div> 
 		</div> 
-		<div class="vids" id = "vid12">
-			<img src = "thumbnail.jpg" width = "275" height="150" alt = "Thumbnail"></img>
+		<div class="vids" id = "vid12"><!---Video with thumbnail channel name date and number of views Same for every 16 videos-->
+			<img src = "thumbnail.jpg" width = "275" height="150" alt = "Thumbnail"></img><br>
 			<i class="fa fa-user-circle-o channel"></i>
 			<span class = "vid_tit">Video Title</span>
 			<div class="chan_name">Channel Name</div>
 			<div class="views">10M views ⚪ 1 month ago</div> 
 		</div> 
-		<div class="vids" id = "vid13">
-			<img src = "thumbnail.jpg" width = "275" height="150" alt = "Thumbnail"></img>
+		<div class="vids" id = "vid13"><!---Video with thumbnail channel name date and number of views Same for every 16 videos-->
+			<img src = "thumbnail.jpg" width = "275" height="150" alt = "Thumbnail"></img><br>
 			<i class="fa fa-user-circle-o channel"></i>
 			<span class = "vid_tit">Video Title</span>
 			<div class="chan_name">Channel Name</div>
 			<div class="views">10M views ⚪ 1 month ago</div> 
 		</div> 
-		<div class="vids" id = "vid14">
-			<img src = "thumbnail.jpg" width = "275" height="150" alt = "Thumbnail"></img>
+		<div class="vids" id = "vid14"><!---Video with thumbnail channel name date and number of views Same for every 16 videos-->
+			<img src = "thumbnail.jpg" width = "275" height="150" alt = "Thumbnail"></img><br>
 			<i class="fa fa-user-circle-o channel"></i>
 			<span class = "vid_tit">Video Title</span>
 			<div class="chan_name">Channel Name</div>
 			<div class="views">10M views ⚪ 1 month ago</div> 
 		</div> 
-		<div class="vids" id = "vid15">
-			<img src = "thumbnail.jpg" width = "275" height="150" alt = "Thumbnail"></img>
+		<div class="vids" id = "vid15"><!---Video with thumbnail channel name date and number of views Same for every 16 videos-->
+			<img src = "thumbnail.jpg" width = "275" height="150" alt = "Thumbnail"></img><br>
 			<i class="fa fa-user-circle-o channel"></i>
 			<span class = "vid_tit">Video Title</span>
 			<div class="chan_name">Channel Name</div>
 			<div class="views">10M views ⚪ 1 month ago</div> 
 		</div> 
-		<div class="vids" id = "vid16">
-			<img src = "thumbnail.jpg" width = "275" height="150" alt = "Thumbnail"></img>
+		<div class="vids" id = "vid16"><!---Video with thumbnail channel name date and number of views Same for every 16 videos-->
+			<img src = "thumbnail.jpg" width = "275" height="150" alt = "Thumbnail"></img><br>
 			<i class="fa fa-user-circle-o channel"></i>
 			<span class = "vid_tit">Video Title</span>
 			<div class="chan_name">Channel Name</div>
 			<div class="views">10M views ⚪ 1 month ago</div> 
 		</div> 
-	</div>
+	</div><!--ENd of videos section-->
 </body>
 </html>
