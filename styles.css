@@ -19,7 +19,7 @@ html, body {/*for making the content come from left and top without any border*/
 		color: rgb(144,144,144);
 		height: 0.5px;
 	}*/
-	.small-bottom, .small-bottomdiv, .small-bottomi, .small-bottoma{
+	.small-bottom, .small-bottomdiv, .small-bottomi, .sm-screen-bottom{
 		display: none;
 	}
 	.div1{/*This contains the user icon and sign in text*/
@@ -593,17 +593,26 @@ html, body {/*for making the content come from left and top without any border*/
 	#bars, #search, #mic, #grid, #option, #contains_signin, #tri, .left_pane{
 		display: none;
 	}
-/*	.small-bottom{
-		background-color: red;
-		position: relative;
+	.sm-screen-bottom{
+		background-color: white;
+		border: solid 1px black;
+		position: fixed;
 		display: inline;
-		top: 100%;
-		width: 100%;
-		height: 10%;
+	    bottom: 0;
+	    left: 0;
+	    right: 0;
 	}
-	.small-bottomdiv{
-		display: inline;
-	}*/
+	.icon2{
+		position: absolute;
+		left: 45%;
+		margin: 0 auto;
+	}
+	.icon1{
+		float: left;
+	}
+	.icon3{
+		float: right;
+	}
 }
 
 
