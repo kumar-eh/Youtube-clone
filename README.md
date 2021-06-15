@@ -8,5 +8,6 @@ Large screens:
 
 
 Small screens:
-<img width="1405" alt="Screenshot 2021-06-14 at 8 38 14 PM" src="https://user-images.githubusercontent.com/68334628/121915262-b0125000-cd50-11eb-90f3-741e4cb70188.png">
+<img width="1411" alt="Screenshot 2021-06-15 at 8 15 55 PM" src="https://user-images.githubusercontent.com/68334628/122074305-b965f000-ce16-11eb-8b8e-c33e5c7ca5d5.png">
+
 
